@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Satisfy&display=swap");
+.dark .hero-head {
+  background-image: url("./images/bg-desktop-dark.jpg");
+  background-size: cover;
+}
+
+.dark .hero-tail {
+  background-color: black;
+}
+
+.dark .toggle-theme-icon {
+  background-image: url("./images/icon-sun.svg");
+}
+
+.dark .input-search {
+  background-color: #1f2a48;
+}
+
+.dark .input-search:focus {
+  color: white;
+}
+
+.dark .input-search::-webkit-input-placeholder {
+  color: white;
+}
+
+.dark .input-search:-ms-input-placeholder {
+  color: white;
+}
+
+.dark .input-search::-ms-input-placeholder {
+  color: white;
+}
+
+.dark .input-search::placeholder {
+  color: white;
+}
+
+.dark .todo_list {
+  background-color: #1f2a48;
+}
+
+.dark .indivisualTodo {
+  color: white;
+}
+
+.dark .footer-todo-list {
+  background-color: #1f2a48;
+}
+
+.dark .incomplete-number {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.dark .completed-indivisual-todo {
+  text-shadow: 1px 2px 1px white;
+}
+
+.dark .btn-footer {
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.dark .btn-footer:hover {
+  color: #bebaba;
+}
+
+.dark .selected-footer-btn {
+  color: blueviolet;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.light {
+  background-color: whitesmoke;
+}
+
+.todo-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.submit {
+  display: none;
+}
+
+.toggle-theme-icon {
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-image: url("./images/icon-moon.svg");
+}
+
+.title-text {
+  color: whitesmoke;
+  letter-spacing: 5px;
+  font-family: "Charm", cursive;
+}
+
+.input-search {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-family: "Charm";
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+
+.input-search:focus {
+  outline: none;
+  font-family: "Charm";
+  color: black;
+}
+
+.input-search::-webkit-input-placeholder {
+  color: black;
+}
+
+.input-search:-ms-input-placeholder {
+  color: black;
+}
+
+.input-search::-ms-input-placeholder {
+  color: black;
+}
+
+.input-search::placeholder {
+  color: black;
+}
+
+.style-text-new {
+  font-family: "Charm";
+}
+
+.todo_list {
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-box-shadow: 1 2px 0px 20px grey;
+          box-shadow: 1 2px 0px 20px grey;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 400px;
+  margin-top: 20px;
+  overflow-y: scroll;
+  background-color: white;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+}
+
+@media (max-width: 600px) {
+  .todo_list {
+    margin-top: 5px;
+  }
+}
+
+.todo_list::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.indivisualTodo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.indivisualTodo p {
+  margin: 0;
+  margin-left: 20px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 10px;
+  font-family: "Charm";
+  font-size: 24px;
+}
+
+.radio {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(128, 128, 128, 0.548);
+  -webkit-box-shadow: 0px 0px 10px linear-gradient(to bottom right, red, yellow);
+          box-shadow: 0px 0px 10px linear-gradient(to bottom right, red, yellow);
+}
+
+.selected {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(128, 0, 128, 0.705)), to(rgba(236, 99, 224, 0.603)));
+  background-image: linear-gradient(to bottom right, rgba(128, 0, 128, 0.705), rgba(236, 99, 224, 0.603));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selected .fa-check {
+  display: inline;
+}
+
+.fa-check {
+  display: none;
+}
+
+.completed-indivisual-todo {
+  color: red;
+  text-shadow: 1px 2px 1px black;
+  font-size: 1rem;
+}
+
+.footer-todo-list {
+  background-color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .footer-todo-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .footer-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.incomplete-number {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #807a7a;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.buttons-modify-list {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.buttons-clear-all {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.btn-footer {
+  border: none;
+  background-color: transparent;
+  color: grey;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.btn-footer:hover {
+  color: #444242;
+}
+
+.selected-footer-btn {
+  color: blueviolet;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.hero-head {
+  background-color: #f7f7f7;
+  margin-top: -20px;
+  height: 40vh;
+  background-image: url("./images/bg-desktop-light.jpg");
+  background-size: cover;
+}
+
+.hero-tail {
+  position: relative;
+  background-color: whitesmoke;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todos-outline {
+  position: absolute;
+  max-width: 700px;
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  margin-top: -30vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media (max-width: 600px) {
+  .todos-outline {
+    margin-top: -30vh;
+    padding-bottom: 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */

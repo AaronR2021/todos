@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "Todo Extension",
+  "author": "Aaron",
+  "version": "1.0.1",
+  "description": "A basic todo application",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

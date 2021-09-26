@@ -1,0 +1,61 @@
+//dark mode
+$dark-text: white;
+$dark-background-color-component: rgb(31, 42, 72);
+
+.dark {
+  .hero-head {
+    background-image: url("./images/bg-desktop-dark.jpg");
+    background-size: cover;
+  }
+  .hero-tail {
+    background-color: black;
+  }
+  .toggle-theme-icon {
+    background-image: url("./images/icon-sun.svg");
+  }
+
+  .input-search {
+    background-color: $dark-background-color-component;
+    &:focus {
+      color: $dark-text;
+    }
+    &::placeholder {
+      color: $dark-text;
+    }
+  }
+  .todo_list {
+    background-color: $dark-background-color-component;
+  }
+  .indivisualTodo {
+    color: $dark-text;
+  }
+
+  .footer-todo-list {
+    background-color: $dark-background-color-component;
+  }
+  .incomplete-number {
+    flex: 1;
+    color: $dark-text;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .completed-indivisual-todo {
+    text-shadow: 1px 2px 1px white;
+  }
+
+  .btn-footer {
+    border: none;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bolder;
+    &:hover {
+      color: rgb(190, 186, 186);
+    }
+  }
+  .selected-footer-btn {
+    color: blueviolet;
+  }
+}
